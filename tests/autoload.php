@@ -14,6 +14,7 @@ spl_autoload_register(
                 'bar' => '/_fixture/Bar.php',
                 'classthatimplementsserializable' => '/_files/ClassThatImplementsSerializable.php',
                 'classwithstaticmethod' => '/_files/ClassWithStaticMethod.php',
+                'classthatdescendsfromaninternalclass' => '/_files/ClassThatDescendsFromAnInternalClass.php',
                 'foo' => '/_fixture/Foo.php',
                 'framework_mockbuildertest' => '/MockBuilderTest.php',
                 'framework_mockobject_generatortest' => '/GeneratorTest.php',

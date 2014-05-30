@@ -833,6 +833,16 @@ class Framework_MockObjectTest extends PHPUnit_Framework_TestCase
         );
     }
 
+    public function testStubForClassThatDescendsFromAnInternalClass()
+    {
+        $this->assertInstanceOf(
+            'ClassThatDescendsFromAnInternalClass',
+            $this->getMockBuilder('ClassThatDescendsFromAnInternalClass')
+                 ->disableOriginalConstructor()
+                 ->getMock()
+        );
+    }
+
     private function resetMockObjects()
     {
         $refl = new ReflectionObject($this);
